@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDEFE7">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome!"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+        <!--text-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose your role!"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="32dp"/>
+
+
+        <!-- Patient Login Button -->
+        <Button
+            android:id="@+id/btn_patient_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login as Patient"
+            android:textColor="#000000"
+            android:backgroundTint="#A8DADC"
+            android:padding="16dp"
+            android:textAllCaps="false"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <!-- Practitioner Login Button -->
+        <Button
+            android:id="@+id/btn_practitioner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login as Practitioner"
+            android:textColor="#000000"
+            android:backgroundTint="#A8DADC"
+            android:padding="16dp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+</ScrollView>

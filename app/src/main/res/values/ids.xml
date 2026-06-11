@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="et_password" type="id" />
+    <item name="btn_login" type="id" />
+    <item name="btn_signup" type="id" />
+    <item name="role_group" type="id" />
+    <item name="rb_patient" type="id" />
+    <item name="rb_practitioner" type="id" />
+    <item name="tv_dashboard_title" type="id" />
+</resources>

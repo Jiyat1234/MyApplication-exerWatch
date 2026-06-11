@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground">
+
+    <TextView android:id="@+id/item_type" android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content" android:text="HR" android:textStyle="bold"/>
+    <TextView android:id="@+id/item_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="72"/>
+    <TextView android:id="@+id/item_ts" android:layout_marginStart="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12:01"/>
+</LinearLayout>

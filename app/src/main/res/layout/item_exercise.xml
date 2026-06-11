@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:background="#B8E0D2"
+    android:elevation="4dp"
+    android:gravity="center_vertical"
+    android:clipToPadding="false">
+
+<ImageView
+android:id="@+id/ivExerciseImage"
+android:layout_width="64dp"
+android:layout_height="64dp"
+android:src="@drawable/ic_shoulder"
+android:contentDescription="Exercise Image"
+android:layout_marginEnd="16dp"
+android:scaleType="centerInside" />
+
+<TextView
+android:id="@+id/tvExerciseName"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Exercise Name"
+android:textColor="#1D3557"
+android:textSize="18sp"
+android:textStyle="bold"/>
+    </LinearLayout>

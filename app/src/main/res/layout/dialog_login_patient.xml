@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/et_patient_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Patient ID"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:inputType="text"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/et_patient_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:inputType="textPassword"
+        android:background="@drawable/edit_text_bg"
+        android:padding="12dp"/>
+</LinearLayout>

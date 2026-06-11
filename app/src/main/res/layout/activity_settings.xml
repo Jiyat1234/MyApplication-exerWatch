@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#AEC6CF">
+
+    <!-- Main content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#AEC6CF"
+            android:title="Settings"
+            android:titleTextColor="#1D3557" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Sensor ID -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sensor ID"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="16dp"/>
+
+                <EditText
+                    android:id="@+id/et_sensor_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Sensor ID"
+                    android:inputType="text"
+                    android:background="@android:drawable/edit_text"
+                    android:padding="8dp"
+                    android:layout_marginTop="8dp"/>
+
+                <!-- Save Button -->
+                <Button
+                    android:id="@+id/btnSaveSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Save"
+                    android:layout_marginTop="24dp"
+                    android:backgroundTint="#4CAF50"
+                    android:textColor="#FFFFFF"
+                    android:padding="12dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navView"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="#AEC6CF"
+        app:menu="@menu/nav_menu"
+        app:headerLayout="@layout/nav_header"
+        app:itemTextColor="@color/nav_text_color"
+        app:itemIconTint="@color/nav_icon_tint" />
+
+</androidx.drawerlayout.widget.DrawerLayout>
